@@ -5,7 +5,9 @@ tools{
 }
 stages{
      stage ('test: builder pattern') {
+     steps {
             sh 'gradle clean test'
+       }
      }
 }
 post{
